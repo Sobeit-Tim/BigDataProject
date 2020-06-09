@@ -1,16 +1,12 @@
 # BigDataProject
 TextRank
-
-
-### Hulth2003
-```tex
-@inproceedings{hulth2003improved,
-title = "Improved Automatic Keyword Extraction given more Linguistic Knowledge",
-author = "Hulth, Anette",
-booktitle = "Proceedings of the 2003 Conference on EMNLP",
-pages = "216--223",
-year = "2003",
-organization = "ACL"
+```
+@InProceedings{Hulth:2003,
+  author = {Anette Hulth},
+  title = {Improved automatic keyword extraction given more linguistic knowledge},
+  booktitle = {Proceedings of the 2003 conference on Empirical methods in natural language processing},
+  year = {2003},
+  pages = {216--223}
 }
 ```
 
