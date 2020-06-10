@@ -2,16 +2,17 @@
 file = open("result.txt", "r")
 res = file.read()
 file.close()
-res = res.split('\n')
+
+print("pagerank result, (value, vertex)")
 print(res)
+res = res.split('\n')
+
 keywords = []
 for i in res:
     if not i:
         continue
     temp = i.replace(')', ',').split(',')[1]
     keywords.append(temp)
-
-print(keywords)
 
 vocab = {}
 file = open("vocab.txt", "r")
@@ -26,8 +27,8 @@ for i in res2:
         continue
     vocab[cnt] = i
     cnt += 1
-print(vocab)
-"""word_keyword = []
+word_keyword = []
 for i in keywords:
-    word_keyword.append(vocab[i])
-"""
+    word_keyword.append(vocab[int(i)])
+print("top 3 keywords")
+print(word_keyword)

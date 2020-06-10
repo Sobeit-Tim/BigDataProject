@@ -3,7 +3,9 @@ from nltk import pos_tag
 from nltk.corpus import stopwords
 import getsub
 
+
 # https://www.youtube.com/watch?v=EvlzEkjVpO8
+
 """
 
 https://www.youtube.com/watch?v=nKW8Ndu7Mjw
@@ -35,11 +37,11 @@ res = res.lower() # lower
 use_tag = ('NN', 'NNS', 'NNPS', 'NNP', 'VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ', 'JJ')
 
 window = int(round(2 * step)) # window size
-print(res)
+#print(res)
 token_word = word_tokenize(res)
-print(token_word)
+#print(token_word)
 tag_word = pos_tag(token_word)
-print(tag_word)
+#print(tag_word)
 index = 0
 vocab = {}
 eliminateWord = set(stopwords.words('english'))
@@ -48,6 +50,7 @@ for x, i in tag_word:
     if i in use_tag and x not in eliminateWord and x not in eliminateWord2 and x not in vocab:
         vocab[x] = index
         index += 1
+print("word - vertex list")
 print(vocab)
 edge = []
 for i in range(len(token_word)):
@@ -67,7 +70,8 @@ for i in range(len(token_word)):
                 edge.append(e2)
 
 edge = sorted(edge)
-
+print("edge list")
+print(edge)
 file = open("vocab.txt", "w")
 for i in vocab:
     file.write("{}\n".format(i))
