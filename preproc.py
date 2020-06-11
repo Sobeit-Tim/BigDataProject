@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=nKW8Ndu7Mjw
 
 """
 
-subtitle = False
+subtitle = True
 step = 1
 if subtitle is True:
     step, res = getsub.get()
