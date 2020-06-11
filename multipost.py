@@ -33,7 +33,7 @@ for n in range(51, 101):
     word_keyword = []
     for i in keywords:
         word_keyword.append(vocab[int(i)])
-    file = open("./new/{}.uncontr.txt".format(n), "r")
+    file = open("./new/{}.uncontr".format(n), "r")
     res2 = file.read()
     file.close()
     res2 = res2.split('\n')[0]

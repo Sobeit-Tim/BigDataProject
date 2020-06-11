@@ -22,7 +22,6 @@ for(num <- 51 to 100){
 
 
     pw.close()
-    sc.stop()
    }
-
+sc.stop()
 

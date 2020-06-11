@@ -27,7 +27,7 @@ step = 1
 if subtitle is True:
     step, res = getsub.get()
 else:
-    file = open("2.abstr", "r")
+    file = open("./new/51.abstr", "r")
     res = file.read()
     file.close()
 
